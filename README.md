@@ -5,7 +5,8 @@
 ### cdn: https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js
 
 ### add above CDN in your html script tag like below,
-'''
+
+```
 <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 
 you can create qrcode from above js library like below,
@@ -25,4 +26,4 @@ var qrcode = new QRCode(document.getElementById("qrcode-1"), {
 
 </script>
 </body>
-'''
+```
