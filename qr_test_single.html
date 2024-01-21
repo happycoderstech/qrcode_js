@@ -1,0 +1,30 @@
+/* Load the library */
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+</script>
+
+/*With some options*/
+<table>
+<tr><td><div id="qrcode-1"></td><td></td>/tr>
+
+</table>
+
+
+<script type="text/javascript">
+var prefix = 1000000
+var start=1
+var end = 50
+
+//var iDiv = document.createElement('div');
+//document.getElementsByTagName('body')[0].appendChild(iDiv)
+
+var qrcode = new QRCode(document.getElementById("qrcode-1"), {
+	text: ""+prefix+""+1,
+	width: 100,
+	height: 100,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+
+</script>
