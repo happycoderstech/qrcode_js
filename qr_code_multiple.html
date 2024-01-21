@@ -1,0 +1,47 @@
+/* Load the library */
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+</script>
+
+/*With some options*/
+<table>
+<tr><td><div id="qrcode-1"><div id="qrtxt-1"></td><td><div id="qrcode-2"><div id="qrtxt-2"></td><td><div id="qrcode-3"><div id="qrtxt-3"></td><td><div id="qrcode-4"><div id="qrtxt-4"></td><td><div id="qrcode-5"><div id="qrtxt-5"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-6"><div id="qrtxt-6"></td><td><div id="qrcode-7"><div id="qrtxt-7"></td><td><div id="qrcode-8"><div id="qrtxt-8"></td><td><div id="qrcode-9"><div id="qrtxt-9"></td><td><div id="qrcode-10"><div id="qrtxt-10"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-11"><div id="qrtxt-11"></td><td><div id="qrcode-12"><div id="qrtxt-12"></td><td><div id="qrcode-13"><div id="qrtxt-13"></td><td><div id="qrcode-14"><div id="qrtxt-14"></td><td><div id="qrcode-15"><div id="qrtxt-15"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-16"><div id="qrtxt-16"></td><td><div id="qrcode-17"><div id="qrtxt-17"></td><td><div id="qrcode-18"><div id="qrtxt-18"></td><td><div id="qrcode-19"><div id="qrtxt-19"></td><td><div id="qrcode-20"><div id="qrtxt-20"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-21"><div id="qrtxt-21"></td><td><div id="qrcode-22"><div id="qrtxt-22"></td><td><div id="qrcode-23"><div id="qrtxt-23"></td><td><div id="qrcode-24"><div id="qrtxt-24"></td><td><div id="qrcode-25"><div id="qrtxt-25"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-26"><div id="qrtxt-26"></td><td><div id="qrcode-27"><div id="qrtxt-27"></td><td><div id="qrcode-28"><div id="qrtxt-28"></td><td><div id="qrcode-29"><div id="qrtxt-29"></td><td><div id="qrcode-30"><div id="qrtxt-30"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-31"><div id="qrtxt-31"></td><td><div id="qrcode-32"><div id="qrtxt-32"></td><td><div id="qrcode-33"><div id="qrtxt-33"></td><td><div id="qrcode-34"><div id="qrtxt-34"></td><td><div id="qrcode-35"><div id="qrtxt-35"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-36"><div id="qrtxt-36"></td><td><div id="qrcode-37"><div id="qrtxt-37"></td><td><div id="qrcode-38"><div id="qrtxt-38"></td><td><div id="qrcode-39"><div id="qrtxt-39"></td><td><div id="qrcode-40"><div id="qrtxt-40"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-41"><div id="qrtxt-41"></td><td><div id="qrcode-42"><div id="qrtxt-42"></td><td><div id="qrcode-43"><div id="qrtxt-43"></td><td><div id="qrcode-44"><div id="qrtxt-44"></td><td><div id="qrcode-45"><div id="qrtxt-45"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+<tr><td><div id="qrcode-46"><div id="qrtxt-46"></td><td><div id="qrcode-47"><div id="qrtxt-47"></td><td><div id="qrcode-48"><div id="qrtxt-48"></td><td><div id="qrcode-49"><div id="qrtxt-49"></td><td><div id="qrcode-50"><div id="qrtxt-50"></td></tr>
+<tr><td colspan="5"><br><br><br></td></tr>
+</table>
+
+
+<script type="text/javascript">
+var prefix = 1000000
+var start=1
+var end = 50
+for(i = start; i <=end; i++){
+
+   var qrcode = new QRCode(document.getElementById("qrcode-"+i), {
+	text: ""+prefix+""+i,
+	width: 22,
+	height: 22,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+   });
+   document.getElementById("qrtxt-"+i).innerHTML = ""+prefix+""+i;
+}
+</script>
